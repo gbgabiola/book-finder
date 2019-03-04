@@ -4,27 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="img/book.ico" type="ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="icon.png" type="png">
   <title>Book Finder App</title>
 </head>
 <body>
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="text-center"><h3 class="main-title">Book Finder</h3></div>
-          <div class="d-flex justify-content-center search-area">
-            <input type="search" id="bookSearch" name="q"
-            aria-label="Search books" placeholder="Search for a title or author of the book..."
-            autocomplete="off">
-            <button>Search</button>
-          </div>
-          <div class="warning-text hidden">
-            Error: Please provide a search query first!
-          </div>
+        <div class="text-center">
+          <h1 class="main-title">Book Finder</h1>
+        </div>
+        <div class="d-flex justify-content-center search-area">
+          <input type="search" id="bookSearch" name="q"
+          aria-label="Search books" placeholder="Search by book title or author..."
+          autocomplete="off">
+          <button>Search</button>
+        </div>
+        <div class="warning-text hidden">
+          Error: Please provide a search query first!
+        </div>
       </div>
     </div>
     <div class="row">
@@ -43,8 +44,7 @@
     </div>
   </div>
 
-  <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
