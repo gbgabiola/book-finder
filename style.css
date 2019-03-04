@@ -1,0 +1,165 @@
+@import url("node_modules/normalize.css/normalize.css");
+
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #292929;
+  font-family: 'Open-Sans', sans-serif;
+}
+
+.main-title {
+  color: #5FE2D1;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 8vh;
+}
+
+#content {
+  margin-top: 20px;
+}
+
+input {
+  background-color: #fff;
+  font-size: 1.12rem;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+input:focus {
+  outline-color: #5FE2D1;
+  border: 2px solid #5FE2D1;
+}
+
+.search-area {
+  color: #5FE2D1;
+  margin-top: 30px;
+  box-shadow: 0px 1px 16px 1px rgba(0,0,0,.1);
+  font-family: 'Open Sans', sans-serif;
+}
+
+button {
+  background-color: #5FE2D1;
+  color: #292929;
+  font-size: 1.12rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+button:hover {
+  background-color: #49988E;
+  color: #fff;
+}
+
+.empty-content {
+  color: #49988E;
+  font-size: 1.5rem;
+  padding: 0 20px;
+  margin-top: 40px;
+}
+
+.empty-content::before {
+  content: "\2639";
+  font-size: calc(2rem - .3rem);
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 780px) {
+  .empty-content {
+    font-size: calc(1.5rem - 50%);
+  }
+  .main-title {
+    font-size: calc(2.5rem - 60%);
+  }
+  input,
+  button {
+    font-size: calc(1.12rem - 25%);
+  }
+}
+
+.bookCard__inner {
+  background-color: #292929;
+  border: 1px solid #5FE2D1;
+  margin: 20px 10px;
+  padding: 20px;
+  position: relative;
+  min-height: 280px;
+}
+
+.bookCard__image {
+  position: absolute;
+  top: 10%;
+  box-shadow: 2px 4px 8px 2px rgba(0,0,0,.3);
+  transition: all .4s ease;
+}
+
+.bookCard__image a {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .bookCard__image {
+    position: initial;
+    top: auto;
+    box-shadow: none;
+  }
+}
+
+.bookCard__image:hover {
+  top: 0;
+}
+
+.bookCard__title {
+  font-weight: 700;
+  color: #5FE2D1;
+  padding-top: 10px;
+}
+
+.bookCard__info {
+  color: #49988E;
+  font-size: .9rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.bookCard__btn {
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.bookCard__btn a {
+  color: #292929;
+  font-size: .9rem;
+  display: block;
+}
+
+.bookCard__btn a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.warning {
+  border: 2px solid #ff2222;
+}
+
+.warning-text {
+  font-size: 1rem;
+  color: #ff2222;
+  padding: 6px 0;
+  text-align: center;
+}
